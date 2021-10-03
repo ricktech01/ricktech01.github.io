@@ -1,10 +1,19 @@
-body {
-    background: linear-gradient(320deg, cyan, blueviolet, mediumspringgreen);
-    background-size: 300% 300%;
+:root {
+    --angle:320deg;
+    --color1: aqua;
+    --color2:blueviolet;
+    --color3:dodgerblue;
+    --duration:40s;
+}
 
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+body {
+    background: linear-gradient(var(--angle),var(--color1), var(--color2), var(--color3));
+    background-size: 12000% 12000%;
+
+     -webkit-animation: AnimationName var(--duration) ease infinite;
+    -moz-animation: AnimationName var(--duration) ease infinite;
+    -o-animation: AnimationName var(--duration) ease infinite;
+    animation: AnimationName var(--duration) ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -13,6 +22,11 @@ body {
     100%{background-position:0% 50%}
 }
 @-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
