@@ -1,0 +1,47 @@
+:root{
+	--timeline-color:white;	
+}
+#timeline {
+  list-style: none;
+  position: relative;
+}
+#timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: var(--timeline-color);
+  left: 50%;
+  margin-left: -1.5px;
+}
+#timeline .clearFix {
+  clear: both;
+  height: 0;
+}
+#timeline .timeline-break {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -5.5px;
+  background-color: var(--timeline-color);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+
+#timeline .timeline-set {
+  position: relative;
+}
+#timeline .timeline-set.top {
+  height: 60px;
+}
+#timeline .timeline-set .timeline-item {
+  padding: 20px 0;
+}
+#timeline .timeline-set .timeline-item .timeline-panel {
+  border: 1px solid #d4d4d4;
+}
