@@ -2,7 +2,6 @@
 	--timeline-color:white;	
 }
 #timeline {
-  list-style: none;
   position: relative;
 }
 #timeline:before {
@@ -10,15 +9,12 @@
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 2px;
+  width: 10px;
   background-color: var(--timeline-color);
   left: 50%;
   margin-left: -1.5px;
 }
-#timeline .clearFix {
-  clear: both;
-  height: 0;
-}
+
 #timeline .timeline-break {
   width: 10px;
   height: 10px;

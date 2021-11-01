@@ -5,6 +5,10 @@
     --icon-color:var(--text-color);
     --anchor-color:white;
     --anchor-color-hover:black;
+    --bs-sm-size:768px;
+    --bs-md-size:992px;
+    --bs-lg-size:1200px;
+    --line-color:white;
 }
 
 body {
@@ -45,3 +49,32 @@ body {
  .navbar-right li{
     float:left;
  }
+
+/* for timeline*/
+ .vert-line {
+    position: relative;
+ }
+ /*add a fake element to divide the page in half*/
+ .vert-line:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: var(--line-color);
+    left: 50%;
+    margin-left: -1.5px;
+    transition: 0.5s ease-out;
+ }
+.vert-line .row {
+    position: relative;
+ }
+.vert-line-container {
+    border: 1px solid white;
+ }
+/*for small screens*/
+@media only screen and (max-width: 992px) {
+  .vert-line:before {
+    transform: translateX(+40vw);
+    }
+}
