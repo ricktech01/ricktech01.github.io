@@ -1,41 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	<title>Ahmed (Rick) A. | Software Developer </title>
-</head>
-<body>
-	 <nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <span class="navbar-brand" href="#">Ahmed (Rick) A.</span>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="./RESUME.pdf" target="_blank">Resume</a></li>
-	    </ul>
-	    <ul class="nav navbar-nav navbar-right" style="display: inline-block;">
-	      	<li><a href="https://www.linkedin.com/in/ahmed-rick-abduljabbar-54640b137/">
-	      		<img src="./icons/linkedin.svg" class="icon" width="20" height="20"/></a>
-	      	</li>
-			<li><a href="https://github.com/ricktech01">
-				<img src="./icons/github.svg" class="icon" width="20" height="20"/></a>
-			</li>
-			<li><a href="mailto:ahmed.m.abduljabbar@outlook.com">
-				<img src="./icons/envelope.svg" class="icon" width="20" height="20"/></a>
-			</li>
-	    </ul>
-	  </div>
-	</nav> 
-	<div class="content">
-		<h1>I am a Software Developer</h1>
-		<h2>You may know me as Rick or Ahmed</h2>
-		<h3>Feel free to view my resume <a href="./RESUME.pdf" target="_blank">here</a>.</h3>
-	</div>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 
-</body>
+		<title>Ahmed (Rick) A. | Software Developer</title>
+	</head>
+	<body>
+		<header>
+			<div class="nav-container">
+				<nav>
+					<span class="logo">Ahmed (Rick) A.</span>
+					<!-- <a href="#"><button class="active">Home</button></a> -->
+					<a href="./RESUME.pdf" target="_blank"><button>Resume</button></a>
+				</nav>
+
+				<div class="social">
+					<a
+						href="https://www.linkedin.com/in/ahmed-rick-abduljabbar-54640b137/"
+					>
+						<img src="./icons/linkedin.svg" class="icon" width="20" height="20"
+					/></a>
+					<a href="https://github.com/ricktech01">
+						<img src="./icons/github.svg" class="icon" width="20" height="20"
+					/></a>
+					<a href="mailto:ahmed.m.abduljabbar@outlook.com">
+						<img src="./icons/envelope.svg" class="icon" width="20" height="20"
+					/></a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="sec">
+				<h1 id="about">I am a Software Developer & Web Designer.</h1>
+				<p>
+					I have a very diverse background in Tech including web development,
+					UI/UX design, database management, and AI research.
+				</p>
+				<p>I like building practical, user-friendly applications.</p>
+			</div>
+			<div class="sec">
+				<h1>Projects and Work Experience</h1>
+				<ul class="timeline">
+					<li>
+						<h2>Office of Research and Sponsored Programs</h2>
+						<h3>
+							<a href="https://orsp.kean.edu" target="_blank"
+								>Kean University</a
+							>
+						</h3>
+						<p>
+							Managed website and database systems for the Office of Research
+							and Sponsored Programs at Kean University
+						</p>
+					</li>
+					<li>
+						<h2>Growth Mindset AI Research</h2>
+						<h3>
+							<a href="http://ai.kean.edu:8080/sounds" target="_blank"
+								>Kean University - AI</a
+							>
+						</h3>
+						<p>
+							Built an AI to classify text and audio and provide feedback to
+							make the content more encouraging for students in a classroom
+							setting.
+						</p>
+						<p>
+							This is meant to be used in the future to help educators provide
+							better feedback to their students.
+						</p>
+					</li>
+					<li>
+						<h2>Work at Shoptaki</h2>
+						<h3>
+							<a href="https://www.shoptaki.com/" target="_blank">Shoptaki</a>
+						</h3>
+						<p>
+							Interned at Shoptaki as a front-end developer where I built a KYC
+							page for their Smart Dive team and an information website for
+							their Data Science team.
+						</p>
+					</li>
+					<li class="timeline-item">
+						<h2>One Stop Research Project</h2>
+						<h3>
+							<a href="https://libguides.ucc.edu/stemjournal" target="_blank"
+								>Union County College - Undergraduate Research Journal Vol.1</a
+							>
+						</h3>
+						<p>
+							I worked with a team of students to design an interface to provide
+							and summarize business information. I also managed porting the
+							code from python to java and creating all the built-in queries.
+						</p>
+					</li>
+					<li>
+						<h2>American Honors Symposium</h2>
+						<h3>
+							<a
+								href="https://github.com/ricktech01/stoichiometry-calculator"
+								target="_blank"
+								>Union County College - American Honors Symposium - 2017</a
+							>
+						</h3>
+						<p>
+							Built a stoichiometric calculator using Python and a simulation of
+							Bohr's atomic model using JavaScript to showcase in the symposium
+							for my project to make STEM education more visualized and
+							interactive using Computer Science.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</main>
+	</body>
 </html>
